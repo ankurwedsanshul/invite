@@ -1,103 +1,97 @@
-<div id="rsvp" class="event-rsvp d-flex flex-column align-items-center col-list ng-scope" style="position:relative">
-    <div class="col-list-item col-list-item-header">
-        <div class="joy-event-welcome-banner d-flex flex-column align-items-center">
-            <div class="hero center">
-                <!-- ngIf: ownerName.first.length > 0 && ownerName.first.length < fianceeName.first.length -->
-                <!-- ngIf: ownerName.first.length > 0 && ownerName.first.length >= fianceeName.first.length --><h1 id="wedding-names" class="left ng-binding ng-scope" ng-if="ownerName.first.length > 0 &amp;&amp; ownerName.first.length >= fianceeName.first.length" style="">
-                    Anshul <br>
-                     &amp; Ankur
-                </h1><!-- end ngIf: ownerName.first.length > 0 && ownerName.first.length >= fianceeName.first.length -->
-                <!--<p>We hope you can make it and we appreciate your prompt reply.</p>-->
-                <p class="ng-binding">Radisson Blu, Kaushambi, Delhi<br>Monday, March 12, 2018</p>
-            </div>
-        </div>
+<div id="rsvp">
+    <div class="hero center">
+        <h1 id="wedding-names" class="left">
+            Anshul <br>
+            &amp; Ankur
+        </h1>
+        <p>Radisson Blu, Kaushambi, Delhi<br>Monday, March 12, 2018</p>
     </div>
-    <!-- ngIf: probableTargetPerson && !inAppWebView -->
+</div>
 
-    <!--Below is the same div but with different models-->
-    <!--Person searcher box-->
-    <!-- ngIf: (!hideNameAndEmailFields && !targetPerson) --><div class="col-list-item ng-scope active-item" id="nameAndEmail" ng-class="{'active-item': true}" ng-if="(!hideNameAndEmailFields &amp;&amp; !targetPerson)">
-        <form class="ng-pristine ng-invalid ng-invalid-required ng-valid-email" name="nameAndEmail" ng-submit="submitNameAndEmail(nameAndEmail, question, $event)">
+
+<div id="rsvp" class="event-rsvp d-flex flex-column align-items-center col-list" style="position:relative">
+    <div class="col-list-item active-item" id="nameAndEmail">
+        <form name="nameAndEmail">
             <div class="col-12 question-title">Enter the details of the guest you would like to respond for</div>
             <div class="col-12 d-flex text-container flex-column">
                 <div class="input-container">
                     <label for="firstName">
-                        <input type="firstname" id="firstName" placeholder="First Name" name="first_name" required="" ng-model="mainActor.firstName" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" aria-required="true" aria-invalid="true">
+                        <input type="firstname" id="firstName" placeholder="First Name" name="first_name" required=""
+                        class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required"
+                        aria-required="true" aria-invalid="true">
                     </label>
-                    <div class="col-12 ng-active ng-hide" ng-messages="nameAndEmail.first_name.$error" ng-messages-multiple="" ng-show="nameAndEmail.first_name.$touched" aria-live="assertive" aria-hidden="true">
-                        <!-- ngMessage: required --><div ng-message="required" class="ng-scope">This is required.</div>
+                    <div class="col-12" aria-live="assertive" aria-hidden="true">
+                        <div ng-message="required" class="ng-scope">This is required.</div>
                     </div>
                 </div>
                 <div class="input-container">
                     <label for="lastName">
-                        <input type="lastname" id="lastName" placeholder="Last Name" name="last_name" ng-model="mainActor.lastName" class="ng-pristine ng-untouched ng-valid ng-empty" aria-invalid="false">
+                        <input type="lastname" id="lastName" placeholder="Last Name" name="last_name"
+                        class="ng-pristine ng-untouched ng-valid ng-empty" aria-invalid="false">
                     </label>
-                    <div class="col-12 ng-inactive ng-hide" ng-messages="nameAndEmail.last_name.$error" ng-messages-multiple="" ng-show="nameAndEmail.last_name.$touched" aria-live="assertive" aria-hidden="true">
-                        <!--<div ng-message="required">This is required.</div>-->
+                    <div class="col-12" aria-live="assertive" aria-hidden="true">
                     </div>
                 </div>
                 <div class="input-container input-container-email">
                     <label for="email">
-                        <input type="email" id="email" placeholder="Email" name="email" required="" ng-model="mainActor.email" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-email" aria-required="true" aria-invalid="true">
+                        <input type="email" id="email" placeholder="Email" name="email" required=""
+                        aria-required="true" aria-invalid="true">
                     </label>
-                    <div class="col-12 email-error ng-active ng-hide" ng-messages="nameAndEmail.email.$error" ng-messages-multiple="" ng-show="nameAndEmail.email.$touched" aria-live="assertive" aria-hidden="true">
-                        <!-- ngMessage: required --><div ng-message="required" class="ng-scope">Joy needs your email! Don’t worry, <a target="_blank" href="https://withjoy.com/privacy/">we won’t spam you</a>. We'll just send you an RSVP summary which allows you to update your responses at any time.</div>
+                    <div class="col-12 email-error ng-active ng-hide" aria-live="assertive" aria-hidden="true">
+                        <div ng-message="required" class="ng-scope">Joy needs your email! Don’t worry,
+                            <a target="_blank" href="https://withjoy.com/privacy/">we won’t spam you</a>.
+                            We'll just send you an RSVP summary which allows you to update your responses at any time.
+                        </div>
                     </div>
                 </div>
                 <div class="saving ng-hide" ng-show="savingQuestions['nameAndEmail']" aria-hidden="true">
                     <div class="loader"></div>
                 </div>
             </div>
-            <!-- ngIf: !targetPersonAcquired --><div class="submission-control d-flex justify-content-center ng-scope" ng-if="!targetPersonAcquired">
+            <div class="submission-control d-flex justify-content-center" ng-if="!targetPersonAcquired">
                 <input class="joy-event-button" type="submit" ng-disabled="savingQuestions['nameAndEmail']" value="that's me" aria-disabled="false">
-            </div><!-- end ngIf: !targetPersonAcquired -->
+            </div>
         </form>
-    </div><!-- end ngIf: (!hideNameAndEmailFields && !targetPerson) -->
-    <!-- ngIf: noMatch -->
-    <!-- ngIf: requestAccessSent -->
-    <!-- ngIf: members -->
-
-    <!--Person detail editing box-->
-    <!--Above is the same div but with different models-->
-    <div class="col-list-item ng-hide active-item" id="nameAndEmail" ng-class="{'active-item': true}" ng-hide="hideNameAndEmailFields || !targetPerson" aria-hidden="true">
-        <form class="ng-pristine ng-invalid ng-invalid-required ng-valid-email" name="nameAndEmail" ng-submit="updateNameAndEmail(nameAndEmail)">
+    </div>
+    <div class="col-list-item ng-hide active-item" id="nameAndEmail" aria-hidden="true">
+        <form name="nameAndEmail">
             <div class="col-12 question-title">Confirm or update name and email address.</div>
             <div class="col-12 d-flex text-container flex-column">
                 <div class="input-container">
                     <label for="firstName">
                         <input type="firstname" id="firstName" placeholder="First Name" name="first_name" required="" ng-model="targetPerson.editableFirstName" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" aria-required="true" aria-invalid="true">
                     </label>
-                    <div class="col-12 ng-active ng-hide" ng-messages="nameAndEmail.first_name.$error" ng-messages-multiple="" ng-show="nameAndEmail.first_name.$touched" aria-live="assertive" aria-hidden="true">
-                        <!-- ngMessage: required --><div ng-message="required" class="ng-scope">This is required.</div>
+                    <div class="col-12 ng-active ng-hide" aria-live="assertive" aria-hidden="true">
+                        <div ng-message="required" class="ng-scope">This is required.</div>
                     </div>
                 </div>
                 <div class="input-container">
                     <label for="lastName">
-                        <input type="lastname" id="lastName" placeholder="Last Name" name="last_name" ng-model="targetPerson.editableLastName" class="ng-pristine ng-untouched ng-valid ng-empty" aria-invalid="false">
+                        <input type="lastname" id="lastName" placeholder="Last Name" name="last_name"
+                        aria-invalid="false">
                     </label>
-                    <div class="col-12 ng-inactive ng-hide" ng-messages="nameAndEmail.last_name.$error" ng-messages-multiple="" ng-show="nameAndEmail.last_name.$touched" aria-live="assertive" aria-hidden="true">
-                        <!--<div ng-message="required">This is required.</div>-->
-                    </div>
-                </div>
-                <div class="input-container">
-                    <label for="email">
-                        <input type="email" id="email" placeholder="Email" name="email" ng-model="targetPerson.editableEmail" class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-email" aria-invalid="false">
-                    </label>
-                    <div class="col-12 ng-inactive ng-hide" ng-messages="nameAndEmail.email.$error" ng-messages-multiple="" ng-show="nameAndEmail.email.$touched" aria-live="assertive" aria-hidden="true">
-                    </div>
-                </div>
-                <!--TODO: ng-show?-->
-                <div class="saving ng-hide" ng-show="savingQuestions['nameAndEmail']" aria-hidden="true">
-                    <div class="loader"></div>
+                    <div class="col-12 ng-inactive ng-hide"
+                    aria-live="assertive" aria-hidden="true">
                 </div>
             </div>
-            <div class="submission-control d-flex justify-content-center">
-                <input class="joy-event-button" type="submit" ng-disabled="savingQuestions['nameAndEmail']" value="save" aria-disabled="false">
+            <div class="input-container">
+                <label for="email">
+                    <input type="email" id="email" placeholder="Email" name="email"
+                    aria-invalid="false">
+                </label>
+                <div class="col-12 ng-inactive ng-hide"
+                aria-live="assertive" aria-hidden="true">
             </div>
-        </form>
+        </div>
+        <div class="saving ng-hide" ng-show="savingQuestions['nameAndEmail']" aria-hidden="true">
+            <div class="loader"></div>
+        </div>
     </div>
-    <!-- ngRepeat: question in rsvpQuestions track by question.id -->
-    <!-- ngIf: revealedQuestions['saveAndContinue'] -->
-    <!-- ngIf: members && !targetPerson && members[0].completedRsvp -->
-    <div class="col-list-bottom-spacer"></div>
+    <div class="submission-control d-flex justify-content-center">
+        <input class="joy-event-button" type="submit"
+        value="save" aria-disabled="false">
+    </div>
+</form>
+</div>
+<div class="col-list-bottom-spacer"></div>
 </div>

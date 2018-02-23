@@ -3,4 +3,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 100vh;
+}
+
+.mapbox {
+    width: 100%;
+    border: 1px #b9b9b9 solid;
 }
