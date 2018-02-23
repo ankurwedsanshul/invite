@@ -1,0 +1,71 @@
+.mainpage {
+    font-family: proxima-nova,Helvetica Neue,sans-serif;
+}
+
+.content-card {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom:20px;
+}
+
+@media (min-width : 768px) {
+    .left-pane {
+        background-size: cover;
+        background-position: center center;
+        background-image: url('https://ceremony-media.withjoy.com:443/ir/l/efaf2448deeda9ea0eeec8a4f4fe2983fdb8cc83c5b877b48/0nf8M6U6RFC4sFGbI12Z_IMG_9080.JPG/st%3D2018-02-22T09%253A46%253A50Z%26se%3D2019-02-22T09%253A51%253A50Z%26sp%3Dr%26sv%3D2016-05-31%26sr%3Dc%26sig%3DHevxpEvjQxtCYLh8rbPDs9t5Fcx95HqOGbxeV4tXpwA%253D');
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        position: fixed;
+        cursor: pointer;
+    }
+}
+
+
+
+.right-pane {
+    position: absolute;
+    right: 0;
+    padding: 0px;
+    margin: 0px;
+}
+
+.menuicon {
+    position: fixed;
+    display: -ms-flexbox;
+    display: flex;
+    top: 30px;
+    left: 10px;
+    padding: 30px;
+    -ms-flex-align: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+.intro-card {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    font-family: proxima-nova,Helvetica Neue,sans-serif;
+    font-weight: 200;
+    font-size: 2.125rem;
+    color: white;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    line-height: 2.6875rem;
+    margin: 10% 20% 11% 10%;
+}
+
+.intro-card .heading {
+    font-size: 6.125rem;
+    font-weight: 300;
+    align-self: left;
+}

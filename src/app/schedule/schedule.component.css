@@ -1,0 +1,66 @@
+.section-component {
+    font-family: proxima-nova,Helvetica Neue,sans-serif;
+    font-size: 15px;
+    position: relative;
+    overflow-y: hidden;
+    padding: 0 20px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 36px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.event-description {
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    font-size: 15px;
+}
+
+.date-row{
+    width: 100%;
+}
+
+.schedule-header {
+    font-size: 25px;
+    margin: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.date-header {
+    font-weight: bolder;
+    text-align: left;
+}
+
+.event-row {
+    align-self: flex-start;
+    padding: 20px;
+    text-align: left;
+    font-weight: lighter;
+}
+
+.event-time {
+    text-align: right;
+    font-weight: bolder;
+    word-wrap: normal;
+}
+
+.event-location a {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #b9b9b9;
+    font-weight: normal;
+}
+.event-name {
+    font-weight: bold;
+}
+.event-list {
+    border-top: 1px;
+    border-top-color: gainsboro;
+    border-top-style: solid;
+}
+
+.calendar-button {
+    font-size: 0.75rem;
+}

@@ -1,0 +1,61 @@
+.dropdown-toggle::after {
+    display:none
+}
+
+.icon-menu .btn {
+    background-color: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.menu-label {
+    text-align: center;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.icon-menu {
+    height: 18px;
+    width: 23px;
+}
+
+.menu-header {
+    display: flex;
+    align-items: left;
+    position: relative;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: 86px;
+    line-height: 86px;
+    border-top-left-radius: 3px;
+    background-color: rgb(255, 250, 241);
+    padding-left: 40px;
+}
+
+.menu-item {
+    font-size: inherit;
+    display: block;
+    font-weight: 300;
+    color: #3A3C3E;
+    transition: all .4s cubic-bezier(.19,1,.22,1);
+    letter-spacing: -.1px;
+    padding: 10px;
+}
+.menu-items {
+    padding: 0 40px;
+}
+.menu-panel {
+    position: fixed;
+    top: 50px !important;
+    left: 30px !important;
+    z-index: 1000;
+    min-width: 350px;
+    border-radius: 3px;
+    background-color:#F2F2F2;
+    overflow: hidden;
+    font-size: 19px;
+
+}
