@@ -35,3 +35,23 @@
     background: transparent;
     border: 2px solid white;
 }
+
+.cntdown {
+    width: 100%;
+    font-family: proxima-nova,Helvetica Neue,sans-serif;
+    font-size: large;
+}
+
+.two-dots {
+    display: none;
+}
+
+.measurements {
+    color: white;
+    margin-right: 5px;
+    padding: 10px;
+}
+
+.divider {
+    font-size: 30px;
+}

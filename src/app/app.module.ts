@@ -12,6 +12,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { LocationComponent } from './location/location.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { CountDown } from "ng2-date-countdown";
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     RsvpComponent,
     WelcomeComponent,
     ScheduleComponent,
-    LocationComponent
+    LocationComponent,
+    CountDown
   ],
   imports: [
     BrowserModule,
