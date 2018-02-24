@@ -13,14 +13,13 @@
     <span class="menu-label">Menu</span>
   </button>
   <div class="menu-panel" ngbDropdownMenu aria-labelledby="dropdownBasic1">
-      <div class="menu-header">Anshul &amp; Ankur</div>
-      <div class="menu-items">
-        <button class="dropdown-item menu-item" [ngx-scroll-to]="'#welcome'" >Welcome</button>
-        <button class="dropdown-item menu-item" [ngx-scroll-to]="'#schedule'">Schedule</button>
-        <button class="dropdown-item menu-item" >Moments</button>
-        <button class="dropdown-item menu-item" [ngx-scroll-to]="'#location'">Location</button>
-        <button class="dropdown-item menu-item" [ngx-scroll-to]="'#rsvp'">RSVP</button>
-      </div>
+    <div class="menu-header">Anshul &amp; Ankur</div>
+    <div class="menu-items">
+      <button class="dropdown-item menu-item" [ngx-scroll-to]="'#welcome'" >Welcome</button>
+      <button class="dropdown-item menu-item" [ngx-scroll-to]="'#schedule'">Schedule</button>
+      <button class="dropdown-item menu-item" [ngx-scroll-to]="'#location'">Location</button>
+      <button class="dropdown-item menu-item" (click)="open()">Moments</button>
     </div>
+  </div>
 </div>
 </div>

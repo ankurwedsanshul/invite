@@ -10,3 +10,11 @@
     width: 100%;
     border: 1px #b9b9b9 solid;
 }
+
+.location-header {
+    font-family: proxima-nova,Helvetica Neue,sans-serif;
+    font-size: 25px;
+    margin: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+}

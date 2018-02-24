@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import {NgbModal, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-moments',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MomentsComponent implements OnInit {
 
-  constructor() { }
+  @Input() name;
+
+  constructor(public activeModal: NgbActiveModal) {}
 
   ngOnInit() {
   }

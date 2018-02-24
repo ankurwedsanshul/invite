@@ -41,6 +41,7 @@
 }
 
 .event-time {
+    width: fit-content;
     text-align: right;
     font-weight: bolder;
     word-wrap: normal;
