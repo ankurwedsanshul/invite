@@ -36,22 +36,9 @@
     border: 2px solid white;
 }
 
-.cntdown {
+.cntdown h1 {
+    font-size: 1rem !important;
+    font-weight: lighter !important;
     width: 100%;
     font-family: proxima-nova,Helvetica Neue,sans-serif;
-    font-size: large;
-}
-
-.two-dots {
-    display: none;
-}
-
-.measurements {
-    color: white;
-    margin-right: 5px;
-    padding: 10px;
-}
-
-.divider {
-    font-size: 30px;
 }
