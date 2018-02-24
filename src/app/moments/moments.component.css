@@ -1,0 +1,5 @@
+.carousel-slide {
+    image-orientation: from-image;
+    width: inherit;
+    max-height: 80vh;
+}
