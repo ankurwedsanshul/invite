@@ -1,6 +1,6 @@
 <div id="schedule" class="flexcenter section-component">
     <div class="schedule-header">Schedule</div>
-    <div class = "date-row">
+    <div *ngIf="isFullInvite()" class = "date-row">
         <div class="date-header">SATURDAY, MARCH 10, 2018</div>
         <div class="event-list">
             <div class="event-row row">
@@ -17,7 +17,7 @@
         </div>
 
     </div>
-    <div class="date-row">
+    <div *ngIf="isFullInvite()" class="date-row">
         <div class="date-header">SUNDAY, MARCH 11, 2018</div>
         <div class="event-list">
             <div class="event-row row">
