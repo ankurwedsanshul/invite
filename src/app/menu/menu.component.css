@@ -32,7 +32,7 @@
     line-height: 86px;
     border-top-left-radius: 3px;
     background-color: rgb(255, 250, 241);
-    padding-left: 40px;
+    padding: 0 40px;
 }
 
 .menu-item {
@@ -52,7 +52,7 @@
     top: 50px !important;
     left: 30px !important;
     z-index: 1000;
-    min-width: 350px;
+    min-width: fit-content;
     border-radius: 3px;
     background-color:#F2F2F2;
     overflow: hidden;
