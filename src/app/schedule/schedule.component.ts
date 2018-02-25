@@ -17,6 +17,6 @@ export class ScheduleComponent implements OnInit {
   }
 
   isFullInvite(): boolean  {
-    return this.location.path(false) == '/invite';
+    return this.location.path(false) == '/invite' || this.location.path(false) == '/invite.html';
   }
 }
