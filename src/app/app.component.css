@@ -13,30 +13,6 @@
     margin-bottom:20px;
 }
 
-@media (min-width : 768px) {
-    .intro-card .heading {
-        font-size: 2em;
-        font-weight: 300;
-        align-self: left;
-    }
-
-    .left-pane {
-        position: fixed;
-        bottom: 0;
-        background-size: contain;
-    }
-
-    .right-pane {
-        position: absolute;
-        right: 0;
-    }
-    .menuicon {
-        position: fixed;
-        top: 0px;
-        left: 0px;
-    }
-}
-
 .left-pane {
     background-size: cover;
     background-position: center center;
@@ -84,4 +60,30 @@
     font-size: 6.125rem;
     font-weight: 300;
     align-self: left;
+}
+
+@media (min-width : 768px) {
+    .intro-card .heading {
+        font-size: 2em;
+        font-weight: 300;
+        align-self: left;
+    }
+
+    .left-pane {
+        position: fixed;
+        bottom: 0;
+        background-size: cover;
+        width: 63%;
+    }
+
+    .right-pane {
+        position: absolute;
+        right: 0;
+        width: 37%;
+    }
+    .menuicon {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+    }
 }
